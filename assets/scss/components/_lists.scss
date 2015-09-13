@@ -1,0 +1,53 @@
+/* Base Lists */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+dl {
+  margin-bottom: $spacing--m;
+
+  dt {
+    font-weight: bold;
+    margin-top: $spacing--xs / 3;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+/* Entry Lists */
+
+.entry-content ul,
+.comment-content ul,
+.widget ul,
+.entry-content ol,
+.comment-content ol,
+.widget ol {
+  color: inherit;
+  margin-bottom: 1.5em;
+  margin-left: $spacing--xs;
+  padding-left: .8em;
+  li {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  ul,ol {
+    margin-bottom:0;
+  }
+}
+.entry-content ul,
+.comment-content ul,
+.widget ul {
+  list-style-type: disc;
+}
+
+.entry-content ol,
+.comment-content ol,
+.widget ol {
+  list-style-type: decimal;
+}

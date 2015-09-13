@@ -1,0 +1,146 @@
+/* Posts Pagination */
+
+.pagination {
+	@include span-columns(12);
+	border-top: $border__base;
+	text-align: center;
+
+	.nav-links {	
+		padding: $spacing--s 0;		
+
+		.page-numbers {
+			list-style: none;
+			margin: 0;
+			@include clearfix;
+
+			li {
+				display: inline-block;
+
+				.page-numbers {				
+					display: inline-block;
+					font-size: $font-size__small;
+					padding: .8em 1.4em;
+					border: $border__base;
+					color: $color__text--base;
+
+					&.current {					
+						background-color: $color__link--hover;
+						color: $color__bg--body;
+					}
+
+					&.dots {
+						background-color: transparent;
+					}
+
+					&.prev,
+					&.next {
+						padding-left: 1em;
+						padding-right: 1em;
+					}
+				}
+
+				a.page-numbers {
+					&:hover {
+						background-color: $color__link--hover;
+						color: $color__bg--body;
+					}
+				}
+
+			}
+
+		}
+
+	}
+}
+
+/* Post Navigation / Comments Navigation */
+
+.post-navigation {
+	@include span-columns(12);
+	//@include shift(2);
+	border-top: $border__base;
+}
+
+.post-navigation,
+.comment-navigation {
+
+	.nav-links {	
+		@include row();
+		padding: $spacing--s 0;
+
+		.nav-previous,
+		.nav-next {
+			@include span-columns(12);
+			text-align: center;
+
+			a {
+				display: block;
+				font-size: $font-size__small;
+				margin-bottom: $spacing--xs;
+			}
+
+		}
+
+		@include media($medium-screen) {
+			
+			.nav-previous,
+			.nav-next {
+				@include span-columns(6);
+				a {
+					display: inline-block;
+					margin-bottom: 0;					
+				}
+			}
+
+			.nav-previous {
+				text-align: left;
+			}
+
+			.nav-next {
+				@include omega();
+				text-align: right;
+				float: right;
+			}
+
+		}
+
+	}
+}
+
+/* Comments Navigation */
+
+.comment-navigation {
+	@include row();	
+}
+
+#comment-nav-above .nav-links {
+	padding: 0 0 $spacing--s;	
+}
+
+#comment-nav-below .nav-links {
+	padding: 0;	
+	margin-bottom: $spacing--s;
+}
+
+/* Page Links */
+
+.page-links {		
+
+	padding: $spacing--xs 0;
+	border-top: $border__base;
+	border-bottom: $border__base;
+  font-size: $font-size__small;
+  text-align: center;
+  a {
+  	display: inline-block;
+    text-decoration: none;
+    border: $border__base;    
+    padding: .8em 1.4em;
+    margin: 0 .4em;
+  }
+
+  a:hover {
+    background-color: $color__link--hover;
+    color: $color__bg--body;
+  }
+}

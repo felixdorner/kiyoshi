@@ -1,0 +1,145 @@
+#comments {
+	@include span-columns(12);	
+	margin-bottom: $spacing--s;
+
+	@include media($large-screen) {
+		@include span-columns(8);
+		@include shift(2);
+	}
+
+	.comments-title {
+		margin-top: $spacing--s;		
+	}
+
+	.comment-list {
+		list-style: none;
+		margin-left: 0;		
+
+		& > .comment {			
+			border: $border__base;
+			padding: $spacing--s $spacing--s 0;
+			margin-bottom: $spacing--s;
+		}
+
+		.bypostauthor {
+			background-color: $color__bg--pre;
+		}
+
+		.children {
+			list-style: none;
+		}
+
+		@include media($medium-screen) {
+
+			.children .comment {
+				padding-left: $spacing--s;
+				margin-left: $spacing--s;
+				margin-bottom: $spacing--s;
+				border-left: $border__base;
+			}
+
+		}
+
+		.comment-body {
+			@include row();
+			padding-bottom: $spacing--s;
+
+			.comment-respond {
+				@include span-columns(12);
+				margin-top: $spacing--s;				
+
+				#cancel-comment-reply-link {
+					font-size: $font-size__small;
+					font-weight: $font-weight__base;
+					float: right;					
+				}
+			}
+		}
+
+		.comment-meta {
+			@include span-columns(12);
+			margin-bottom: $spacing--xs;
+			
+			@include media($medium-screen) {
+				@include span-columns(3);
+				margin-bottom: 0;
+			}
+
+			.avatar {
+				margin-bottom: 1em;
+				max-width: 56px;
+				height: auto;
+				border-radius: 50%;
+			}
+
+			a.comment-date {				
+				font-size: $font-size__small;	
+			}
+
+			cite {
+				font-size: $font-size__medium;
+				line-height: 1em;				
+				font-style: normal;
+				font-weight: 900;				
+				clear: both;
+				display: block;
+			}
+		}
+
+		.comment-content {
+			@include span-columns(12);
+			
+			@include media($medium-screen) {		
+				@include span-columns(9);
+				@include omega();
+			}
+
+			a {
+				word-wrap: break-word;
+			}
+
+		}
+
+		.reply {
+			@include clearfix;
+			font-size: $font-size__small;
+			margin-bottom: 1.618em;
+
+			.comment-edit-link {
+				border-left: $border__base;
+				margin-left: $spacing--xs / 3;
+			}
+
+			a {
+				color: $color__text--base;
+				border: $border__base;
+				padding: .53em 1em;
+				float: left;
+
+				&:hover {
+					background-color: $color__text--base;
+					color: $color__bg--body;
+				}
+			}
+		}
+
+	}
+}
+
+#respond {
+	@include row();	
+	clear: both;	
+
+	.comment-form-author,
+	.comment-form-email,
+	.comment-form-url {
+		input {
+			width: 100%;
+		}
+	}
+
+	.form-submit,
+	form {
+		margin-bottom: 0;
+	}
+}

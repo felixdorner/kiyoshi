@@ -1,0 +1,128 @@
+/* Specific Typography */
+
+.site-title,
+.site-description {
+  font-size: $font-size__h5;
+  line-height: $line-height__small;
+}
+
+.entry-title {
+  font-size: $font-size__h2; 
+  line-height: $font-size__h2 * 1.4;   
+  text-align: left;
+  margin: $spacing--xs 0 $spacing--s;
+  u {
+    text-decoration: none;
+    border-bottom: 6px solid $color__text--base;
+  }
+  
+  @include media($medium-screen) {
+  	font-size: $font-size__h1; 
+  	line-height: $font-size__h1 * 1.4;
+  }
+
+  @include media($large-screen) {
+  	font-size: $font-size__h1 * 1.4; 
+  	line-height: $font-size__h1 * 2;
+  	text-align: center;
+  	u {	    
+	    border-bottom: 8px solid $color__text--base;
+	  }
+  }
+
+}
+
+.archive .page-title,
+.search .page-title {
+	font-size: $font-size__medium;
+	font-weight: $font-weight__base;
+	color: transparentize($color__text--base, .4);
+	border: $border__base;
+	padding: $spacing--xs;
+	margin-bottom: $spacing--m;
+}
+
+.comments-title,
+.comment-reply-title {
+  font-size: $font-size__h5;
+  padding-top: $spacing--s;
+  border-top: $border__base;
+}
+
+.widget {
+  font-size: $font-size__medium;
+}
+
+.widget-title {
+  font-size: $font-size__base;
+}
+
+.site-title--footer {
+  font-size: $font-size__h5;
+  margin: 0;
+}
+
+.site-description--footer {
+  font-size: $font-size__h5;
+  line-height: $line-height__small;
+}
+
+.site-info {
+  font-size: $font-size__medium;
+}
+
+.sticky-tag {	
+	font-size: $font-size__small;
+	padding: ($spacing--xs / 3) ($spacing--xs / 2);
+	background: $color__text--base;
+	color: $color__bg--body;
+}
+
+.posted-on,
+.byline {
+	@include row();
+	font-size: $font-size__small;	
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: block;
+}
+
+.cat-links,
+.tags-links,
+.comments-link,
+.edit-link {
+	font-size: $font-size__small;	
+}
+
+/* Asides */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* Alignments */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+}

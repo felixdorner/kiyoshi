@@ -1,0 +1,293 @@
+/* Site Wrap */
+
+body.overflow-hidden {
+	overflow: hidden;
+}
+
+.site {	
+	@include outer-container(1170px);
+	padding: 0 $spacing--s;
+}
+
+/* Header */
+
+.site-header {	
+	@include span-columns(12);
+	@include omega();
+	padding: $spacing--m 0;
+
+	.site-branding {
+		@include span-columns(6 of 12);		
+		
+		.site-title,
+		.site-description {
+			display: inline;
+		}	
+
+		.site-description {
+			margin-left: 8px;
+		}	
+
+	}
+
+	.main-navigation {
+		position: relative;
+		@include span-columns(6 of 12);
+	}
+
+}
+
+/* Content Wrap */
+
+.content-area,
+.site-main {
+	@include span-columns(12);	
+}
+
+/* Entry Content */
+
+.hentry {
+	position: relative;
+	@include span-columns(12);
+	@include omega();
+	margin-bottom: $spacing--l;
+
+	.row {
+		@include row();
+		position: relative;
+
+		.sticky-tag {
+			position: absolute;			
+			top: 0;			
+		}
+
+		.featured-image {
+			position: relative;
+			@include span-columns(12 of 12);
+			margin-bottom: $spacing--s;
+			text-align: center;	
+			opacity: .9;
+			@include transition(all 0.2s linear);
+			&:hover {
+				opacity: 1;
+			}			
+			a {
+				display: block;
+			}
+		}
+
+		.featured-image--empty {
+			position: relative;
+			@include span-columns(12 of 12);
+			margin-bottom: $spacing--s;
+			border: $border__base;
+			height: 250px;
+		}
+
+		.entry-header {
+			position: relative;
+			@include span-columns(12 of 12);
+
+			.cat-links,
+			.tags-links,
+			.comments-link,
+			.edit-link {
+				display: block;
+			}
+		}
+
+		@include media($medium-screen) {
+			
+			.featured-image--empty {				
+				height: 400px;
+			}
+
+		}
+
+		
+		@include media($large-screen) {
+
+			.featured-image {				
+				@include span-columns(9 of 12);	
+				margin: 0;			
+			}
+
+			.featured-image--empty {				
+				@include span-columns(9 of 12);				
+				height: 500px;
+				margin: 0;
+			}
+
+			.entry-header {
+				position: absolute;
+				@include span-columns(5 of 12);
+				@include omega();
+				@include center(y);
+
+				.cat-links,
+				.tags-links,
+				.comments-link,
+				.edit-link {
+					@include span-columns (3 of 5);
+				}
+			}
+
+		} // END Media Query
+
+	} // END Header Row
+
+	
+	.entry-content {
+		@include span-columns (12 of 12);		
+		margin-top: $spacing--m;
+	}
+
+	@include media($large-screen) {
+
+		.entry-content {
+			@include span-columns (8 of 12);
+			@include shift(2);			
+		}
+
+	} // END Media Query
+
+} // END Entry Content
+
+.single .hentry,
+.page .hentry {
+	margin-bottom: $spacing--m;
+}
+
+@include media($large-screen) {
+
+	/* Entry Content - Odd */
+
+	.hentry:nth-of-type(odd) {
+
+		.sticky-tag {
+			left: 0;
+		}
+
+		.entry-header {		
+			right: 0;		
+
+			.posted-on,
+			.byline {
+				text-align: right;
+			}
+
+			.cat-links,
+			.tags-links,
+			.comments-link,
+			.edit-link {			
+				@include shift(2 of 5);
+				@include omega();
+			}
+
+		}
+	}
+
+	/* Entry Content - Even */
+
+	.hentry:nth-of-type(even) {	
+
+		.sticky-tag {
+			right: 0;
+		}
+
+		.featured-image,
+		.featured-image--empty {		
+			@include shift(3);
+		}
+
+		.entry-header {		
+			left: 0;		
+
+			.posted-on,
+			.byline {
+				text-align: left;
+			}
+
+			.cat-links,
+			.tags-links,
+			.comments-link,
+			.edit-link {			
+				text-align: right;			
+			}
+
+		}
+	}
+
+} // END Media Query
+
+/* Footer */
+
+.site-footer {
+	@include span-columns(12);
+	@include omega();
+	padding: $spacing--m 0 $spacing--l;	
+  border-top: $border__base;
+
+	.footer-branding {
+		@include span-columns(12 of 12);
+	}
+
+	.footer-widgets {
+		@include span-columns(12 of 12);
+		@include omega();		
+
+		.widget {
+			@include span-columns(12 of 12);
+			margin-bottom: $spacing--s;			
+			ul {
+				list-style: none;
+				margin: 0;
+				padding-left: 0;
+			}
+		}
+	}
+
+	@include media($medium-screen) {
+		
+		.footer-branding {
+			@include span-columns(4 of 12);
+		}
+
+		.footer-widgets {
+			@include span-columns(8 of 12);
+			@include omega();
+
+			.widget {
+				@include span-columns(4 of 8);
+				@include omega(2n);				
+			}
+		}
+
+	}
+
+	@include media($large-screen) {
+		
+		.footer-branding {
+			@include span-columns(3 of 12);
+		}
+
+		.footer-widgets {
+			@include span-columns(9 of 12);
+			@include omega();
+
+			.widget {
+				@include span-columns(3 of 9);
+				@include omega-reset(2n);
+				@include omega(3n);	
+			}
+		}
+
+	}
+
+	.site-info {
+		@include span-columns(12 of 12);
+		text-align: center;
+		margin-top: $spacing--s;
+		opacity: .4;
+	}
+}

@@ -1,0 +1,26 @@
+table {
+  border-collapse: collapse;
+  margin: $spacing--xs 0 $spacing--s;
+  table-layout: fixed;
+  width: 100%;
+  font-size: .8em;
+}
+
+th {
+  border-bottom: 1px solid darken($border__color--base, 15);
+  font-weight: bold;
+  padding: ($spacing--xs / 3) 0;
+  text-align: left;
+}
+
+td {
+  border-bottom: $border__base;
+  padding: ($spacing--xs / 3) 0;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+

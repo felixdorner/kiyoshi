@@ -1,0 +1,115 @@
+/* Base Typo */
+
+body {
+  color: $color__text--base;
+  font-family: $font__base;
+  font-size: $font-size__base;
+  line-height: $line-height__base;
+  font-weight: $font-weight__base;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 1.5em;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+pre {
+  background: $color__bg--pre;
+  color: $color__text--pre;
+  font-family: $font__pre;
+  font-size: $font-size__small;
+  line-height: $line-height__base;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+code, kbd, tt, var {
+  font-family: $font__code;
+  font-size: $font-size__small;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted $border__color--base;
+  cursor: help;
+}
+
+mark, ins {
+  background: $color__bg--pre;
+  color: $color__text--pre;
+  text-decoration: none;
+}
+
+small {
+  font-size: $font-size__small;
+}
+
+big {
+  font-size: $font-size__big;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote, q {
+  font-family: $font__alt;
+  line-height: $line-height__headings;
+  margin: 0 0 .8em;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+  clear: both;
+  font-weight: $font-weight__bold;
+  word-wrap: break-word;
+
+  & a,
+  & a:visited {
+    color: $color__text--base;
+  }
+}
+
+h1 {
+  font-size: $font-size__h1;
+}
+
+h2 {
+  font-size: $font-size__h2;  
+}
+
+h3 {
+  font-size: $font-size__h3;
+}
+
+h4 {
+  font-size: $font-size__h4;
+}
+
+h5 {
+  font-size: $font-size__h5;
+}
+
+h6 {
+  font-size: $font-size__h6;
+}
+
+blockquote, q {
+  font-size: $font-size__h5; 
+  padding-left: $spacing--s;
+}

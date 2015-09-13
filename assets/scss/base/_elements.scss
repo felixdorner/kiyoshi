@@ -1,0 +1,56 @@
+*, *:after, *:before {
+  @include box-sizing(border-box);
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: $color__bg--body;
+}
+
+a {
+  @include transition(all 0.2s linear);
+  color: $color__link;
+  text-decoration: none;
+
+  &:visited {
+    color: $color__link--visited;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color__link--hover;    
+  }
+  &:focus {
+    outline: 0;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+hr {
+  border-bottom: $border__base;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $spacing--s 0;
+}
+
+img,
+picture,
+figure {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+embed,
+iframe,
+object {
+  max-width: 100%;
+}

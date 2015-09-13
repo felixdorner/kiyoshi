@@ -1,0 +1,108 @@
+//
+//
+// TYPO
+//
+//
+
+// Fonts
+$font__base:								"Lato", Helvetica, Arial, sans-serif;
+$font__alt:									$font__base;
+$font__pre:									"Courier 10 Pitch", Courier, monospace;
+$font__code:								Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+// Font Sizes
+$font-size__base: 					18px;
+$font-size__small: 					.7em;
+$font-size__medium:					.8em;
+$font-size__big:						1.4em;
+$font-size__h1: 						$font-size__base * 2.4;
+$font-size__h2: 						$font-size__base * 2;
+$font-size__h3: 						$font-size__base * 1.8;
+$font-size__h4: 						$font-size__base * 1.6;
+$font-size__h5: 						$font-size__base * 1.4;
+$font-size__h6: 						$font-size__base * 1.2;
+
+// Font Weights
+$font-weight__light:				300;
+$font-weight__base:					400;
+$font-weight__bold:					900;
+
+// Line heights
+$line-height__base: 				1.6;
+$line-height__headings: 		1.4;
+$line-height__small:				1.2;
+$line-height__zero:					1;
+
+
+//
+//
+// COLORS
+//
+//
+
+// Backgrounds
+$color__bg--body:						black;
+$color__bg--screen: 				transparentize(white, .9);
+$color__bg--pre: 						transparentize(white, .9);
+$color__bg--input: 					transparent;
+$color__bg--button: 				transparent;
+
+// Text
+$color__text--base: 				white;
+$color__text--pre: 					$color__text--base;
+$color__text--screen: 			$color__text--base;
+$color__text--button: 			$color__text--base;
+
+// Links
+$color__link: 							transparentize($color__text--base, .4);
+$color__link--visited: 			white;
+$color__link--hover: 				white;
+
+
+//
+//
+// SPACINGS
+//
+//
+
+$spacing--xs: 							15px;
+$spacing--s: 								30px;
+$spacing--m: 								60px;
+$spacing--l: 								90px;
+$spacing--xl: 							120px;
+
+
+//
+//
+// Z-INDEX
+//
+//
+
+$z__content--below: 				1;
+$z__content: 								2;
+$z__content--above: 				3;
+$z__above-all: 							99999;
+
+
+//
+//
+// BORDERS
+//
+//
+
+$border__color--base:				$color__text--base;
+$border__base: 							1px solid transparentize($border__color--base, .8);
+$border__buttons: 					$border__base;
+$border__radius--base:			0;
+
+
+//
+//
+// FORMS
+//
+//
+
+$form__font: 								$font__base;
+$form__font-size: 					$font-size__base;
+$form__border-color: 				$border__color--base;
+$form__border: 							$border__base;

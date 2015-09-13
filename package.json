@@ -1,0 +1,13 @@
+{
+  "name": "kiyoshi",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-browser-sync": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-watch": "latest",
+    "load-grunt-tasks": "latest"
+  }
+}

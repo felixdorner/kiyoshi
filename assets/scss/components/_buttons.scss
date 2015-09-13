@@ -1,0 +1,32 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.nav-previous a,
+.nav-next a,
+#cancel-comment-reply-link {
+	@include appearance(none);
+	@include transition(all 0.2s linear);
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  //white-space: nowrap;
+
+	border: $border__buttons;
+	border-radius: $border__radius--base;
+	background: $color__bg--button;
+	color: $color__text--button;
+	font-size: $font-size__base;
+	//line-height: $line-height__zero;
+	padding: 1em 1.2em;
+
+	&:hover {
+		background: $color__text--button;
+		color: $color__bg--body;
+	}
+
+	&:active,
+	&:focus {
+				
+	}
+}
