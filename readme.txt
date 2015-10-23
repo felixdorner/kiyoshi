@@ -1,38 +1,39 @@
-=== kiyoshi ===
+=== Kiyoshi WordPress Theme ===
 
-Contributors: automattic
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
-
-Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.0.0
+Contributers: Felix Dorner
+Requires at least: 3.8
+Tested up to: 4.3.1
+Version: 1.0.0
+Donate link: http://felixdorner.de
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-A starter theme called kiyoshi, or underscores.
+Tags: black, white, dark, responsive-layout, one-column, custom-background, custom-menu, featured-image-header, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, photoblogging
 
 == Description ==
 
-Hi. I'm a starter theme called kiyoshi, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Kiyoshi is an edgy WordPress theme which is crafted especially for creative publishers. The theme’s extra-ordinary and responsive layout makes your stream of posts look outstanding and unique. Kiyoshi is targeted to architects, photographers and other aesthetically driven folks.
 
 == Installation ==
-	
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
+
+1. Sign into your WordPress dashboard, go to Appearance > Themes, and click Add New.
+2. Click Upload.
+3. Click Choose File and select the theme zip file within the 'all-files'-package you downloaded.
+4. Click Install Now.
+5. After WordPress installs the theme, click Activate.
+6. You've successfully installed your new theme!
 
 == Frequently Asked Questions ==
 
-= Does this theme support any plugins? =
+= Can I upload my logo? =
 
-kiyoshi includes support for Infinite Scroll in Jetpack.
+Yes you can - but you'll need to install/activate the Jetpack Plugin.
 
-== Changelog ==
+= Can I set infinite scroll for posts? =
 
-= 1.0 - May 12 2015 =
-* Initial release
+Yes you can - but you'll need to install/activate the Jetpack Plugin.
 
-== Credits ==
+= I need more help! What should I do? =
 
-* Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+As this is a free theme, support is limited to the basics. You can find me helping out in the designated support forum: https://wordpress.org/support/theme/kiyoshi
+
+However, if you need more than basic help I can offer you extended customization services: http//felixdorner.de

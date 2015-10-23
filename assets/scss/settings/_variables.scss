@@ -41,7 +41,7 @@ $line-height__zero:					1;
 //
 
 // Backgrounds
-$color__bg--body:						black;
+$color__bg--body:						#111111;
 $color__bg--screen: 				transparentize(white, .9);
 $color__bg--pre: 						transparentize(white, .9);
 $color__bg--input: 					transparent;
@@ -56,7 +56,7 @@ $color__text--button: 			$color__text--base;
 // Links
 $color__link: 							transparentize($color__text--base, .4);
 $color__link--visited: 			white;
-$color__link--hover: 				white;
+$color__link--hover: 				transparentize($color__text--base, .6);
 
 
 //

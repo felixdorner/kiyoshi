@@ -1,72 +1,123 @@
-/* Mobile Navigation */
+/* Navigation */
 
-.main-navigation.toggled > ul {	
-	top: 0;
-	z-index: $z__content--above;
-}
-
-.main-navigation > ul {	
+.site-navigation-wrapper {
+	/* by default it's hidden - on bottom of the viewport */
 	position: fixed;
-	top: -120%;
 	left: 0;
-	width: 100%;
+	top: 0;
 	height: 100%;
+	width: 100%;
+	background: rgba(17,17,17, .9);
+	z-index: 998;	
+	opacity: 1;	
 
-	padding: $spacing--xl $spacing--s;
-	
-	font-size: $font-size__h5;
-	text-align: center;
-	background-color: rgba(0, 0, 0, .9);	
-	
-	@include transition(all 0.2s linear);
 	@include backface-visibility(hidden);
 
-	overflow: auto;
+	// Flexbox
+	//@include align-items(center);
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+
+	overflow-x: hidden;
+	overflow-y: auto;
 	/* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
 	-webkit-overflow-scrolling: touch;
 
-	ul {
-		font-size: $font-size__medium;
-		margin: $spacing--xs 0;		
-		ul {
-			font-size: $font-size__small;
-		}
-	}
+	@include transform(translateY(-100%));
+	@include transition-property(transform);
+	@include transition-duration(.2s);
+	//@include transition(all .2s linear);
 
-	> li {
-		margin-bottom: $spacing--xs;		
-	}
-
-	.current-menu-item a {
-		color: $color__link--hover;
+	&.is-visible {
+		@include transform(translateY(0));
+		opacity: 1;
 	}
 
 }
 
-/* Hamburger Menu Icon */
+.main-navigation {
+	text-align: center;
+	opacity: 0;
+	margin: auto;
+	padding: $spacing--l;	
 
-$menu-icon-color: white;
+	@include transition(all .8s ease-in-out);
+	@include transition-delay(0.2s);
+
+	> ul {
+		display: inline-block;
+	}
+
+	li {
+		font-size: 1.4em;
+		padding-bottom: $spacing--s;
+		margin-bottom: $spacing--s;
+		border-bottom: 1px solid rgba(white, .1);
+		@include media($large-screen) {
+			font-size: 2em;
+		}
+	}	
+
+	li:last-child {		
+		border: none;
+	}
+
+	a {		
+		display: inline-block;
+	}
+
+	.sub-menu {
+		padding: 0;
+
+		li {
+			font-size: .6em;
+			border: none;
+			padding-bottom: .4em;
+			padding-top: .4em;
+			margin: 0;		
+
+			ul {
+				padding: 0;
+
+				li {
+					padding-bottom: .2em;
+					padding-top: .2em;
+				}
+			}
+		}
+		
+		li:last-child {
+			margin-bottom: 0;
+			border: none;
+		}
+	}
+
+}
+
+.site-navigation-wrapper.is-visible .main-navigation {
+	opacity: 1;
+}
+
+/* Menu Icon */
 
 .primary-nav-trigger {
-	display: block;
 	position: absolute;
 	right: 0;
-	top: 0;
-	height: 50px;
-	width: 50px;
-	border: $border--base;
-	z-index: $z__above-all;
+	//top: 0;
+	//height: 100%;
+	width: 30px;
+	z-index: 999;
 
 	.menu-icon {
 		/* this span is the central line of the menu icon */
 		display: inline-block;
-		position: absolute;
+		position: relative;
 		@include center;
 		width: 22px;
 		height: 1px;
-		background-color: $menu-icon-color;
+		background-color: white;
 		@include transition(background-color .3s);
-
 		
 		/* these are the upper and lower lines in the menu icon */
 		&::before, &:after {
@@ -74,7 +125,7 @@ $menu-icon-color: white;
 			width: 100%;
 			height: 100%; 
 			position: absolute;
-			background-color: $menu-icon-color;
+			background-color: white;
 			right: 0;
 
 			-webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
@@ -91,10 +142,10 @@ $menu-icon-color: white;
 		}
 
 		&.is-clicked {
-			background-color: transparent;
+			background-color: rgba(white, 0);
 
 			&::before, &::after {
-				background-color: $menu-icon-color;
+				background-color: rgba(white, 1);
 			}
 
 			&::before {
@@ -106,107 +157,6 @@ $menu-icon-color: white;
 				top: 0;
 				@include transform(rotate(225deg));
 			}
-		}
-		
-	}
-
-	@include media($large-screen) {
-		display: none;			
-	}
-
-}
-
-/* Desktop Navigation */
-
-@include media($large-screen) {
-
-	.nav-menu {
-		float: right;
-	}
-
-	.main-navigation > ul {	
-		position: relative;
-		width: auto;
-		list-style: none;
-
-		// Reset from mobile nav settings
-		background: none;		
-		padding: 0;
-		font-size: $font-size__base;
-		text-align: right;
-		overflow: visible;
-		//
-
-		li {
-			position: relative;
-			float: left;
-			margin: 0 0 0 $spacing--s;
-		}
-
-		//Sub Menus
-		ul {
-			position: absolute;
-			top: 130%;
-			left: 50%;
-			@include transform(translateX(-50%));
-
-			width: 140px;			
-			height: auto;		
-
-			margin: 0;		
-			padding: $spacing--xs;			
-			border: $border--base;		
-			
-			text-align: center;
-			background: rgba(0, 0, 0, .9);								
-			
-			opacity: 0;
-			visibility: hidden;
-			z-index: $z__above-all;			
-
-			@include transition(all 0.2s linear);
-
-			ul {
-				position: relative;
-		    opacity: 1;
-		    top: 1em;
-		    visibility: visible;
-		    float: left;
-		    border: none;
-		    width: 100%;
-				li {					
-					border: none;				
-				}
-			}
-
-			li {
-				position: relative;	
-				margin: 0 0 $spacing--xs;
-				padding-bottom: $spacing--xs;
-				border-bottom: $border--base;			
-				width: 100%;				
-
-				&:last-of-type {
-					margin: 0;
-					padding: 0;
-					border: none;
-				}
-
-			}
-
-			li:hover > ul {
-				// Reset for 3rd level hover - no animation here
-				// Same value - see .main-navigation > ul ul ul		
-				top: 1em;				
-			}
-
-		}
-
-		li:hover > ul {
-			// see .main-navigation > ul ul
-			opacity: 1;
-			top: 110%;
-			visibility: visible;	
 		}
 
 	}

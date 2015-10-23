@@ -1,5 +1,6 @@
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll .pagination,
 .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
   display: none;
 }
@@ -7,4 +8,43 @@
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
   display: block;
+}
+
+.infinite-wrap {
+	position: relative;
+	@include span-columns(12);	
+}
+
+#infinite-handle {
+	@include span-columns(12);	
+	border-top: $border__base;
+	text-align: center;
+}
+
+#infinite-handle span {
+	display: inline-block;
+	font-size: $font-size__small;
+	background: none;
+	margin: $spacing--s 0;
+	button {
+		padding: .8em 1.4em;
+		border: $border__buttons;
+	}
+	button:hover {
+		padding: .8em 1.4em;
+		border: $border__buttons;
+		opacity: 1;
+		background: $color__text--button;
+		color: $color__bg--body;
+	}
+}
+
+/* Tiled Mosaic */
+
+.tiled-gallery-caption {
+	font-family: $font__pre;
+  font-size: $font-size__small / 1.2 !important;
+  text-align: center;
+	background: rgba(17, 17, 17, .9) !important;
+  color: #fff !important;  
 }

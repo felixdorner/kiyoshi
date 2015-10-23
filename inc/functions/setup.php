@@ -56,11 +56,11 @@ function kiyoshi_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'kiyoshi_thumb_large', 840 );
+	add_image_size( 'kiyoshi_thumb_large', 860 );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'kiyoshi' ),
+		'primary' => esc_html__( 'Primary Menu - maximal 3 levels', 'kiyoshi' ),
 	) );
 
 	/*
@@ -77,9 +77,15 @@ function kiyoshi_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'kiyoshi_custom_background_args', array(
-		'default-color' => '000000',
+		'default-color' => '111111',
 		'default-image' => '',
 	) ) );
+
+	/*
+	 * Enable support for Site Logo
+	 * See http://jetpack.me/support/site-logo/
+	 */
+	add_theme_support( 'site-logo' );
 
 }
 endif; // kiyoshi_setup
@@ -108,15 +114,19 @@ function kiyoshi_widgets_init() {
  */
 function kiyoshi_scripts() {
 	global $kiyoshi_version;
+	global $post;
 
 	wp_enqueue_style( 'kiyoshi-fonts', kiyoshi_fonts_url(), array(), null );
-	wp_enqueue_style( 'kiyoshi-style', get_stylesheet_uri(), '', $kiyoshi_version );
-
-	//wp_enqueue_script( 'kiyoshi-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
-	wp_enqueue_script( 'kiyoshi-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
-	wp_enqueue_script( 'kiyoshi-scripts', get_template_directory_uri() . '/assets/js/theme.js', array( 'jquery' ), '20150911', true );
+	wp_enqueue_style( 'kiyoshi-style', get_stylesheet_uri(), array(), $kiyoshi_version );
+	
+	wp_enqueue_script( 'kiyoshi-lightbox', get_template_directory_uri() . '/assets/js/imagelightbox.min.js', array( 'jquery' ), $kiyoshi_version, true );
+	wp_enqueue_script( 'kiyoshi-scripts', get_template_directory_uri() . '/assets/js/theme.js', array( 'jquery' ), $kiyoshi_version, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
+	}
+
+	if ( ( is_singular() ) && ( get_post_gallery($post->ID) ) ) {
+		wp_enqueue_script( 'kiyoshi-gallery', get_template_directory_uri() . '/assets/js/gallery.js', array( 'jquery', 'masonry' ), $kiyoshi_version, true );
 	}
 }

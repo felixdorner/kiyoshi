@@ -35,7 +35,7 @@ module.exports = function(grunt) {
           src : ['style.css', 'assets/js/*.js']
         },
         options: {
-          proxy: "kiyoshi.dev",
+          proxy: "kiyoshi.felixdorner.dev",
           watchTask: true,
           notify: false
         }
@@ -50,12 +50,20 @@ module.exports = function(grunt) {
       build: {
         expand: true, 
         src: [
-          '**/*', 
+          '**/*',
           '!**/node_modules/**', 
-          '!**/bower_components/**',          
+          '!**/bower_components/**', 
           '!**/.sass-cache/**', 
-          '!**/.git/**',
+          '!**/.git/**', 
+          '!**/scss/**', 
+          '!Gruntfile.js', 
+          '!package.json', 
+          '!bower.json',          
           '!.gitignore',
+          '!.DS_store',
+          '!kiyoshi.zip',
+          '!README.md',
+          '!changelog.md'
         ], 
         dest: 'kiyoshi/'
       },

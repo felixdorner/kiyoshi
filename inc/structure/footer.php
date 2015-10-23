@@ -46,9 +46,8 @@ if ( ! function_exists( 'kiyoshi_credit' ) ) {
 	function kiyoshi_credit() {
 		?>		
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kiyoshi' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'kiyoshi' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'kiyoshi' ), 'Kiyoshi', '<a href="http://drnr.co" rel="designer">Felix Dorner</a>' ); ?>
+			<?php printf( esc_html__( 'Proudly powered by %s', 'kiyoshi' ), '<a href="https://wordpress.org/">WordPress</a>' ); ?><br />
+			<?php printf( esc_html__( 'Theme %1$s by %2$s', 'kiyoshi' ), '<a href="https://wordpress.org/themes/kiyoshi">Kiyoshi</a>', '<a href="http://felixdorner.de" rel="designer">Felix Dorner</a>' ); ?>
 		</div><!-- .site-info -->
 		<?php
 	}

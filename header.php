@@ -27,18 +27,21 @@
 	/**
 	 * @hooked kiyoshi_skip_links - 0
 	 */
-	do_action( 'kiyoshi_before_header' ); ?>
+	do_action( 'kiyoshi_header_before' ); ?>
 
 	<header id="masthead" class="site-header" role="banner">
 		<?php
 		/**
 		 * @hooked kiyoshi_site_branding - 10			 
-		 * @hooked kiyoshi_primary_navigation - 20			 
+		 * @hooked kiyoshi_primary_nav_trigger - 20			 
 		 */
 		do_action( 'kiyoshi_header' ); ?>
 	</header><!-- #masthead -->
 
-	<?php	
-	do_action( 'kiyoshi_after_header' ); ?>
+	<?php
+	/**
+	 * @hooked kiyoshi_primary_nav - 10			 
+	 */
+	do_action( 'kiyoshi_header_after' ); ?>
 
 	<div id="content" class="site-content">

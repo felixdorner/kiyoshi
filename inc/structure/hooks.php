@@ -21,14 +21,18 @@ add_action( 'wp_enqueue_scripts', 'kiyoshi_scripts', 10 );
  * Header
  * @see kiyoshi_skip_links()
  * @see kiyoshi_site_branding()
- * @see kiyoshi_primary_navigation()
+ * @see kiyoshi_primary_nav_trigger()
+ * @see kiyoshi_primary_nav()
  */
-add_action( 'kiyoshi_before_header', 'kiyoshi_skip_links', 0 );
+add_action( 'kiyoshi_header_before', 'kiyoshi_skip_links', 0 );
 add_action( 'kiyoshi_header', 'kiyoshi_site_branding', 10 );
-add_action( 'kiyoshi_header', 'kiyoshi_primary_navigation', 20 );
+add_action( 'kiyoshi_header', 'kiyoshi_primary_nav_trigger', 20 );
+add_action( 'kiyoshi_header_after', 'kiyoshi_primary_nav', 10 );
 
 /**
  * Footer
+ * @see kiyoshi_footer_branding() 
+ * @see kiyoshi_footer_widgets()
  * @see kiyoshi_credit()
  */
 add_action( 'kiyoshi_footer', 'kiyoshi_footer_branding', 10 );
@@ -39,8 +43,8 @@ add_action( 'kiyoshi_footer', 'kiyoshi_credit', 30 );
  * Posts
  * @see kiyoshi_post_header()
  * @see kiyoshi_post_content()
- * @see kiyoshi_paging_nav()
- * @see kiyoshi_post_nav()
+ * @see kiyoshi_posts_pagination()
+ * @see kiyoshi_post_navigation()
  * @see kiyoshi_display_comments()
  */
 add_action( 'kiyoshi_loop_post', 'kiyoshi_post_header',	10 );

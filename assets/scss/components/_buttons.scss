@@ -4,7 +4,7 @@ input[type="reset"],
 input[type="submit"],
 .nav-previous a,
 .nav-next a,
-#cancel-comment-reply-link {
+#cancel-comment-reply-link{
 	@include appearance(none);
 	@include transition(all 0.2s linear);
   cursor: pointer;
@@ -21,6 +21,7 @@ input[type="submit"],
 	padding: 1em 1.2em;
 
 	&:hover {
+		opacity: 1;
 		background: $color__text--button;
 		color: $color__bg--body;
 	}

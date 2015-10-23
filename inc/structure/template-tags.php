@@ -14,10 +14,8 @@ if ( ! function_exists( 'kiyoshi_post_thumbnail' ) ) {
 	 * @param string $size
 	 * @since 1.0.0
 	 */
-	function kiyoshi_post_thumbnail( $size ) {
-		if ( has_post_thumbnail() ) {
-			the_post_thumbnail( $size, array( 'itemprop' => 'image' ) );
-		}
+	function kiyoshi_post_thumbnail( $size ) {		
+		the_post_thumbnail( $size, array( 'itemprop' => 'image' ) );		
 	}
 }
 
@@ -32,11 +30,13 @@ if ( ! function_exists( 'kiyoshi_featured_image' ) ) {
 				<?php if ( ! is_singular() ) : ?>
 					<a href="<?php the_permalink(); ?>" rel="bookmark"><?php kiyoshi_post_thumbnail( 'kiyoshi_thumb_large' ); ?></a>
 				<?php else : ?>
-					<?php kiyoshi_post_thumbnail( 'full' ); ?>
+					<?php kiyoshi_post_thumbnail( 'kiyoshi_thumb_large' ); ?>
 				<?php endif; ?>			
 			</div>
 		<?php else : ?>
-			<div class="featured-image--empty"></div>
+			<div class="featured-image--empty">
+				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/placeholder.png'); ?>" alt="placeholder">
+			</div>
 		<?php endif;
 	}
 }
@@ -79,12 +79,7 @@ if ( ! function_exists( 'kiyoshi_posted_on' ) ) {
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
-		$byline = sprintf(
-			_x( 'by %s', 'post author', 'kiyoshi' ),
-			'<span class="vcard author"><span class="fn" itemprop="author"><a class="url fn n" rel="author" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span></span>'
-		);
-
-		echo apply_filters( 'kiyoshi_single_post_posted_on_html', '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>', $posted_on, $byline );
+		echo apply_filters( 'kiyoshi_single_post_posted_on_html', '<span class="posted-on">' . $posted_on . '</span>', $posted_on );
 
 	}
 }
@@ -110,7 +105,7 @@ if ( ! function_exists( 'kiyoshi_entry_meta' ) ) {
 			}
 		}
 
-		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 			echo '<span class="comments-link">';
 			comments_popup_link( esc_html__( 'Leave a comment', 'kiyoshi' ), esc_html__( '1 Comment', 'kiyoshi' ), esc_html__( '% Comments', 'kiyoshi' ) );
 			echo '</span>';

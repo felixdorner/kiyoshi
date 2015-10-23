@@ -6,7 +6,7 @@
 	text-align: center;
 
 	.nav-links {	
-		padding: $spacing--s 0;		
+		padding: $spacing--s 0;
 
 		.page-numbers {
 			list-style: none;
@@ -24,7 +24,7 @@
 					color: $color__text--base;
 
 					&.current {					
-						background-color: $color__link--hover;
+						background-color: white;
 						color: $color__bg--body;
 					}
 
@@ -41,7 +41,7 @@
 
 				a.page-numbers {
 					&:hover {
-						background-color: $color__link--hover;
+						background-color: white;
 						color: $color__bg--body;
 					}
 				}
@@ -140,7 +140,7 @@
   }
 
   a:hover {
-    background-color: $color__link--hover;
+    background-color: white;
     color: $color__bg--body;
   }
 }

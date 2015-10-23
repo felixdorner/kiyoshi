@@ -10,7 +10,7 @@
   font-size: $font-size__h2; 
   line-height: $font-size__h2 * 1.4;   
   text-align: left;
-  margin: $spacing--xs 0 $spacing--s;
+  margin: 4px 0 $spacing--s;
   u {
     text-decoration: none;
     border-bottom: 6px solid $color__text--base;
@@ -33,7 +33,7 @@
 }
 
 .archive .page-title,
-.search .page-title {
+.search:not(.search-no-results) .page-title {
 	font-size: $font-size__medium;
 	font-weight: $font-weight__base;
 	color: transparentize($color__text--base, .4);
@@ -45,7 +45,7 @@
 .comments-title,
 .comment-reply-title {
   font-size: $font-size__h5;
-  padding-top: $spacing--s;
+  padding-top: $spacing--m;
   border-top: $border__base;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .site-info {
-  font-size: $font-size__medium;
+  font-size: $font-size__small;
 }
 
 .sticky-tag {	

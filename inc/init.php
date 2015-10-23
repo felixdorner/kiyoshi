@@ -12,6 +12,11 @@
 require get_template_directory() . '/inc/functions/setup.php';
 
 /**
+ * Welcome Screen
+ */
+require get_template_directory() . '/inc/admin/welcome-screen/welcome-screen.php';
+
+/**
  * Structure.
  * Template functions used throughout the theme.
  */

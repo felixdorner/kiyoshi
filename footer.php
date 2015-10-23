@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-	<?php do_action( 'kiyoshi_before_footer' ); ?>
+	<?php do_action( 'kiyoshi_footer_before' ); ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
@@ -27,7 +27,7 @@
 
 	</footer><!-- #colophon -->
 
-	<?php do_action( 'kiyoshi_after_footer' ); ?>
+	<?php do_action( 'kiyoshi_footer_after' ); ?>
 
 </div><!-- #page -->
 

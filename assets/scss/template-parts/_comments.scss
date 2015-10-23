@@ -1,6 +1,6 @@
 #comments {
 	@include span-columns(12);	
-	margin-bottom: $spacing--s;
+	margin-bottom: $spacing--l;
 
 	@include media($large-screen) {
 		@include span-columns(8);
@@ -12,8 +12,10 @@
 	}
 
 	.comment-list {
+		@include row();
 		list-style: none;
-		margin-left: 0;		
+		margin-left: 0;
+		margin-bottom: $spacing--s;	
 
 		& > .comment {			
 			border: $border__base;

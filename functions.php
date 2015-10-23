@@ -12,7 +12,6 @@ require get_template_directory() . '/inc/init.php';
 
 /**
  * IMPORTANT NOTE:
- * Do not add any custom code here. Please use a child theme so that your 
- * customizations aren't lost during updates.
+ * Do not add any custom code here. Please use a child theme for customizations.
  * http://codex.wordpress.org/Child_Themes
  */

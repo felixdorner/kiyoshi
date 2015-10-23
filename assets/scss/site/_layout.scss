@@ -1,23 +1,40 @@
 /* Site Wrap */
 
 body.overflow-hidden {
+	position: fixed;
 	overflow: hidden;
+	width: 100%;	
 }
 
 .site {	
-	@include outer-container(1170px);
+	@include outer-container(1330px);
 	padding: 0 $spacing--s;
+	
+	@include media($large-screen) {
+		padding: 0 $spacing--l;
+	}
+
 }
 
 /* Header */
 
-.site-header {	
+.site-header {
+	position: relative;	
 	@include span-columns(12);
 	@include omega();
-	padding: $spacing--m 0;
+	padding: $spacing--s 0 $spacing--l;
 
 	.site-branding {
-		@include span-columns(6 of 12);		
+		@include span-columns(8 of 12);
+
+		.site-logo-link {
+			display: block;
+			line-height: 1;
+			img {
+				max-height: 40px;
+				width: auto;
+			}
+		}	
 		
 		.site-title,
 		.site-description {
@@ -30,18 +47,32 @@ body.overflow-hidden {
 
 	}
 
-	.main-navigation {
-		position: relative;
-		@include span-columns(6 of 12);
+	@include media($large-screen) {
+		padding: $spacing--l 0;
 	}
 
 }
 
 /* Content Wrap */
 
-.content-area,
 .site-main {
-	@include span-columns(12);	
+	@include span-columns(12);
+}
+
+.error-404,
+.no-results {
+	@include row();
+	margin-bottom: $spacing--l;
+	text-align: center;
+
+	.page-content {
+		@include span-columns (8 of 12);
+		@include shift(2);
+	}
+
+	.search-form input[type="submit"] {
+		display: none;
+	}
 }
 
 /* Entry Content */
@@ -58,18 +89,22 @@ body.overflow-hidden {
 
 		.sticky-tag {
 			position: absolute;			
-			top: 0;			
+			top: 0;	
+			z-index: 2;
 		}
 
 		.featured-image {
 			position: relative;
+			z-index: 1;
 			@include span-columns(12 of 12);
 			margin-bottom: $spacing--s;
 			text-align: center;	
-			opacity: .9;
-			@include transition(all 0.2s linear);
-			&:hover {
-				opacity: 1;
+			opacity: .9;			
+			a img {
+				@include transition(all 0.2s linear);
+			}	
+			a:hover img {
+				opacity: .8;
 			}			
 			a {
 				display: block;
@@ -78,15 +113,16 @@ body.overflow-hidden {
 
 		.featured-image--empty {
 			position: relative;
+			z-index: 1;
 			@include span-columns(12 of 12);
 			margin-bottom: $spacing--s;
-			border: $border__base;
-			height: 250px;
+			border: $border__base;			
 		}
 
 		.entry-header {
 			position: relative;
-			@include span-columns(12 of 12);
+			z-index: 2;
+			@include span-columns(12 of 12);			
 
 			.cat-links,
 			.tags-links,
@@ -94,15 +130,7 @@ body.overflow-hidden {
 			.edit-link {
 				display: block;
 			}
-		}
-
-		@include media($medium-screen) {
-			
-			.featured-image--empty {				
-				height: 400px;
-			}
-
-		}
+		}		
 
 		
 		@include media($large-screen) {
@@ -114,7 +142,6 @@ body.overflow-hidden {
 
 			.featured-image--empty {				
 				@include span-columns(9 of 12);				
-				height: 500px;
 				margin: 0;
 			}
 
@@ -122,7 +149,7 @@ body.overflow-hidden {
 				position: absolute;
 				@include span-columns(5 of 12);
 				@include omega();
-				@include center(y);
+				@include center(y);				
 
 				.cat-links,
 				.tags-links,

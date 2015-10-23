@@ -1,347 +1,272 @@
-# Copyright (C) 2015 Automattic
-# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: _s 1.0.0\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2015-06-12 21:51:31+0000\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Kiyoshi\n"
+"POT-Creation-Date: 2015-10-23 13:31+0200\n"
+"PO-Revision-Date: 2015-10-23 13:30+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: 404.php:15
-#@ _s
+#: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:19
-#@ _s
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
-#: 404.php:27
-#@ _s
-msgid "Most Used Categories"
-msgstr ""
-
-#. translators: %1$s: smiley
-#: 404.php:44
+#: comments.php:31
 #, php-format
-#@ _s
-msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
-
-#: comments.php:29
-#, php-format
-#@ _s
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:38
-#: comments.php:59
-#@ _s
+#: comments.php:40 comments.php:62
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:41
-#: comments.php:62
-#@ _s
+#: comments.php:43 comments.php:65
 msgid "Older Comments"
 msgstr ""
 
-#: comments.php:42
-#: comments.php:63
-#@ _s
+#: comments.php:44 comments.php:66
 msgid "Newer Comments"
 msgstr ""
 
-#: comments.php:75
-#@ _s
+#: comments.php:78
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:16
-#@ _s
-msgid "http://wordpress.org/"
+#: inc/admin/welcome-screen/sections/intro.php:11
+msgid "Awesome! You've decided to use Kiyoshi as your theme."
 msgstr ""
 
-#: footer.php:16
+#: inc/admin/welcome-screen/sections/intro.php:15
+msgid "About this Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:17
+msgid "Support & Customizations"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:18
+msgid ""
+"As this is a free theme, support is limited to the basics. You can find me "
+"helping out in the designated support forum. However, if you need more than "
+"basic help I can offer you extended customization services."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:19
+msgid "Support Forum"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:19
+msgid "Inquire Customization"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:20
+msgid "Can I Contribute?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:21
+msgid ""
+"Found a bug? Want to contribute a patch or create a new feature? GitHub is "
+"the place to go! Or would you like to translate Kiyoshi in to your language? "
+"Get involved."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:22
+msgid "GitHub"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:22
+msgid "Localize"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:23
+msgid "Are you enjoying Kiyoshi?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:24
 #, php-format
-#@ _s
-msgid "Proudly powered by %s"
+msgid ""
+"Why not leave a review on %sWordPress.org%s? I would really appreciate "
+"it! :-)"
 msgstr ""
 
-#: footer.php:18
+#: inc/admin/welcome-screen/sections/intro.php:33
 #, php-format
-#@ _s
-msgid "Theme: %1$s by %2$s."
+msgid ""
+"Looking for more themes? Take a look at my collection. %sMore themes &rarr;%s"
 msgstr ""
 
-#: functions.php:45
-#: header.php:32
-#@ _s
-msgid "Primary Menu"
-msgstr ""
-
-#: functions.php:100
-#@ _s
-msgid "Sidebar"
-msgstr ""
-
-#: header.php:23
-#@ _s
-msgid "Skip to content"
-msgstr ""
-
-#: inc/extras.php:52
+#: inc/admin/welcome-screen/welcome-screen.php:42
 #, php-format
-#@ _s
-msgid "Page %s"
+msgid ""
+"Thanks for choosing Kiyoshi! Visit the %swelcome screen%s to get started."
 msgstr ""
 
-#: inc/template-tags.php:23
-#@ _s
-msgid "Posts navigation"
+#: inc/admin/welcome-screen/welcome-screen.php:43
+msgid "Get started with Kiyoshi"
 msgstr ""
 
-#: inc/template-tags.php:27
-#@ _s
-msgid "Older posts"
+#: inc/functions/extras.php:66
+msgctxt "Lato font: on or off"
+msgid "on"
 msgstr ""
 
-#: inc/template-tags.php:31
-#@ _s
-msgid "Newer posts"
+#: inc/functions/setup.php:63
+msgid "Primary Menu - maximal 3 levels"
 msgstr ""
 
-#: inc/template-tags.php:56
-#@ _s
-msgid "Post navigation"
+#: inc/functions/setup.php:101
+msgid "Footer"
 msgstr ""
 
-#: inc/template-tags.php:86
+#: inc/structure/comments.php:43
 #, php-format
-#@ _s
-msgctxt "post date"
-msgid "Posted on %s"
+msgid "<cite class=\"fn\">%s</cite>"
 msgstr ""
 
-#: inc/template-tags.php:91
-#, php-format
-#@ _s
-msgctxt "post author"
-msgid "by %s"
+#: inc/structure/comments.php:55
+msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:108
-#: inc/template-tags.php:114
-#@ _s
-msgid ", "
-msgstr ""
-
-#: inc/template-tags.php:110
-#, php-format
-#@ _s
-msgid "Posted in %1$s"
-msgstr ""
-
-#: inc/template-tags.php:116
-#, php-format
-#@ _s
-msgid "Tagged %1$s"
-msgstr ""
-
-#: inc/template-tags.php:122
-#@ _s
-msgid "Leave a comment"
-msgstr ""
-
-#: inc/template-tags.php:122
-#@ _s
-msgid "1 Comment"
-msgstr ""
-
-#: inc/template-tags.php:122
-#@ _s
-msgid "% Comments"
-msgstr ""
-
-#: inc/template-tags.php:126
-#: template-parts/content-page.php:26
-#@ _s
+#: inc/structure/comments.php:62 inc/structure/template-tags.php:114
 msgid "Edit"
 msgstr ""
 
-#: inc/template-tags.php:143
+#: inc/structure/footer.php:49
 #, php-format
-#@ _s
-msgid "Category: %s"
+msgid "Proudly powered by %s"
 msgstr ""
 
-#: inc/template-tags.php:145
+#: inc/structure/footer.php:50
 #, php-format
-#@ _s
-msgid "Tag: %s"
+msgid "Theme %1$s by %2$s"
 msgstr ""
 
-#: inc/template-tags.php:147
+#: inc/structure/header.php:15
+msgid "Skip to content"
+msgstr ""
+
+#: inc/structure/page.php:41 inc/structure/post.php:64
 #, php-format
-#@ _s
-msgid "Author: %s"
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: inc/template-tags.php:149
+#: inc/structure/page.php:48 inc/structure/post.php:71
+msgid "Pages:"
+msgstr ""
+
+#: inc/structure/pagination.php:18
+msgctxt "Next post"
+msgid "Next"
+msgstr ""
+
+#: inc/structure/pagination.php:19
+msgctxt "Previous post"
+msgid "Previous"
+msgstr ""
+
+#: inc/structure/template-tags.php:52
+msgid "Featured"
+msgstr ""
+
+#: inc/structure/template-tags.php:78
 #, php-format
-#@ _s
-msgid "Year: %s"
+msgctxt "post date"
+msgid "%s"
 msgstr ""
 
-#: inc/template-tags.php:149
-#@ _s
-msgctxt "yearly archives date format"
-msgid "Y"
+#: inc/structure/template-tags.php:96 inc/structure/template-tags.php:102
+msgid ", "
 msgstr ""
 
-#: inc/template-tags.php:151
+#: inc/structure/template-tags.php:98
 #, php-format
-#@ _s
-msgid "Month: %s"
+msgid "Posted in %1$s"
 msgstr ""
 
-#: inc/template-tags.php:151
-#@ _s
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr ""
-
-#: inc/template-tags.php:153
+#: inc/structure/template-tags.php:104
 #, php-format
-#@ _s
-msgid "Day: %s"
+msgid "Tagged with %1$s"
 msgstr ""
 
-#: inc/template-tags.php:153
-#@ _s
-msgctxt "daily archives date format"
-msgid "F j, Y"
+#: inc/structure/template-tags.php:110
+msgid "Leave a comment"
 msgstr ""
 
-#: inc/template-tags.php:156
-#@ _s
-msgctxt "post format archive title"
-msgid "Asides"
+#: inc/structure/template-tags.php:110
+msgid "1 Comment"
 msgstr ""
 
-#: inc/template-tags.php:158
-#@ _s
-msgctxt "post format archive title"
-msgid "Galleries"
+#: inc/structure/template-tags.php:110
+msgid "% Comments"
 msgstr ""
 
-#: inc/template-tags.php:160
-#@ _s
-msgctxt "post format archive title"
-msgid "Images"
-msgstr ""
-
-#: inc/template-tags.php:162
-#@ _s
-msgctxt "post format archive title"
-msgid "Videos"
-msgstr ""
-
-#: inc/template-tags.php:164
-#@ _s
-msgctxt "post format archive title"
-msgid "Quotes"
-msgstr ""
-
-#: inc/template-tags.php:166
-#@ _s
-msgctxt "post format archive title"
-msgid "Links"
-msgstr ""
-
-#: inc/template-tags.php:168
-#@ _s
-msgctxt "post format archive title"
-msgid "Statuses"
-msgstr ""
-
-#: inc/template-tags.php:170
-#@ _s
-msgctxt "post format archive title"
-msgid "Audio"
-msgstr ""
-
-#: inc/template-tags.php:172
-#@ _s
-msgctxt "post format archive title"
-msgid "Chats"
-msgstr ""
-
-#: inc/template-tags.php:175
+#: search.php:18
 #, php-format
-#@ _s
-msgid "Archives: %s"
-msgstr ""
-
-#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
-#: inc/template-tags.php:179
-#, php-format
-#@ _s
-msgid "%1$s: %2$s"
-msgstr ""
-
-#: inc/template-tags.php:181
-#@ _s
-msgid "Archives"
-msgstr ""
-
-#: search.php:16
-#, php-format
-#@ _s
 msgid "Search Results for: %s"
 msgstr ""
 
 #: template-parts/content-none.php:14
-#@ _s
 msgid "Nothing Found"
 msgstr ""
 
 #: template-parts/content-none.php:20
 #, php-format
-#@ _s
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: template-parts/content-none.php:24
-#@ _s
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
 msgstr ""
 
 #: template-parts/content-none.php:29
-#@ _s
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:19
-#: template-parts/content-single.php:23
-#: template-parts/content.php:32
-#@ _s
-msgid "Pages:"
+#. Theme Name of the plugin/theme
+msgid "Kiyoshi"
 msgstr ""
 
-#. translators: %s: Name of current post 
-#: template-parts/content.php:25
-#, php-format
-#@ _s
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+#. Theme URI of the plugin/theme
+msgid "http://kiyoshi.felixdorner.de/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Kiyoshi is an edgy WordPress theme which is crafted especially for creative "
+"publishers. The theme’s extra-ordinary and responsive layout makes your "
+"stream of posts look outstanding and unique. Kiyoshi is targeted to "
+"architects, photographers and other aesthetically driven folks."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Felix Dorner"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://felixdorner.de/"
 msgstr ""
