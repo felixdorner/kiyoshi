@@ -41,7 +41,7 @@ if ( ! function_exists( 'kiyoshi_comment' ) ) {
 					<div class="comment-author vcard">
 						<?php echo get_avatar( $comment, 128 ); ?>
 						<?php printf( __( '<cite class="fn">%s</cite>', 'kiyoshi' ), get_comment_author_link() ); ?>
-						<a href="<?php echo esc_url( htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ); ?>" class="comment-date">
+						<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>" class="comment-date">
 							<?php echo '<time>' . get_comment_date() . '</time>'; ?>
 						</a>
 					</div>

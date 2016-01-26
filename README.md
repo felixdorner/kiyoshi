@@ -4,13 +4,11 @@
 
 Kiyoshi is an edgy WordPress theme which is crafted especially for creative publishers. The theme’s extra-ordinary and responsive layout makes your stream of posts look outstanding and unique. Kiyoshi is targeted to architects, photographers and other aesthetically driven folks.
 
-[Live Demo](http://kiyoshi.felixdorner.de) / [Download on WordPress.org](https://wordpress.org/themes/kiyoshi/)
+[Live Demo](http://kiyoshi.felixdorner.de) / [Download Theme](https://wordpress.org/themes/kiyoshi/)
 
-## Support & Customizations
+## Support
 
 As this is a free theme, support is limited to the basics. You can find me helping out in the designated [support forum](https://wordpress.org/support/theme/kiyoshi).
-
-However, if you need more than basic help I can offer you [extended customization services](http://felixdorner.de).
 
 ## Contributing
 
