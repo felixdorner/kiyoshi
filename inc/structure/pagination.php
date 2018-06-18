@@ -23,7 +23,7 @@ if ( ! function_exists( 'kiyoshi_paging_nav' ) ) {
 	}
 }
 
-if ( ! function_exists( 'kiyoshi_post_nav' ) ) {
+if ( ! function_exists( 'kiyoshi_post_navigation' ) ) {
 	/**
 	 * Display navigation to next/previous post when applicable.
 	 * @uses the_post_pagination()

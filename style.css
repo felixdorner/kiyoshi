@@ -2,25 +2,19 @@
 /*---------------------------------------------------------------------------------
 
 	Theme Name: Kiyoshi
-	Version: 1.1.0
+	Version: 1.2.0
 	Author: Felix Dorner
-	Author URI: http://felixdorner.de/
-	Theme URI: http://kiyoshi.felixdorner.de/
+	Author URI: https://felixdorner.de/
+	Theme URI: https://felixdorner.de/kiyoshi
 	Description: Kiyoshi is an edgy WordPress theme which is crafted especially for creative publishers. The theme’s extra-ordinary and responsive layout makes your stream of posts look outstanding and unique. Kiyoshi is targeted to architects, photographers and other aesthetically driven folks.
 	License: GNU GENERAL PUBLIC LICENSE, Version 2
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	Text Domain: kiyoshi
 	Tags: black, white, dark, responsive-layout, one-column, custom-background, custom-menu, featured-image-header, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, photoblogging
 
-	Kiyoshi is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-	Underscores is distributed under the terms of the GNU GPL v2 or later.
-
 	Normalizing styles have been helped along thanks to the fine work of
 	Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
-	Kiyoshi WordPress Theme, Copyright (C) 2016, Felix Dorner
-	Kiyoshi is distributed under the terms of the GNU GPL
-	
 	IMPORTANT NOTE:
 	Do not add any custom styles here. Please use a child theme for customizations.
 	http://codex.wordpress.org/Child_Themes
@@ -30,7 +24,7 @@
 	# Normalize
 	# Basics
 		## Elements
-		## Typography	
+		## Typography
 	# Components
 		## Forms
 		## Tables
@@ -40,7 +34,7 @@
 		## Media
 	# Site
 		## Layout
-		## Posts and Pages		
+		## Posts and Pages
 	# Template Parts
 		## Navigation
 		## Pagination
@@ -765,7 +759,7 @@ input[type="submit"]:hover,
 
 .wp-caption-text {
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 0.58333em;
+  font-size: 0.5833333333em;
 }
 
 /* WP Gallery */
@@ -927,7 +921,7 @@ body.overflow-hidden {
   position: relative;
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   margin-right: 0;
   padding: 30px 0 90px;
@@ -938,8 +932,8 @@ body.overflow-hidden {
 .site-header .site-branding {
   float: left;
   display: block;
-  margin-right: 2.85714%;
-  width: 65.71429%;
+  margin-right: 2.8571428571%;
+  width: 65.7142857143%;
 }
 .site-header .site-branding:last-child {
   margin-right: 0;
@@ -969,7 +963,7 @@ body.overflow-hidden {
 .site-main {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
 }
 .site-main:last-child {
@@ -992,9 +986,9 @@ body.overflow-hidden {
 .no-results .page-content {
   float: left;
   display: block;
-  margin-right: 2.85714%;
-  width: 65.71429%;
-  margin-left: 17.14286%;
+  margin-right: 2.8571428571%;
+  width: 65.7142857143%;
+  margin-left: 17.1428571429%;
 }
 .error-404 .page-content:last-child,
 .no-results .page-content:last-child {
@@ -1010,7 +1004,7 @@ body.overflow-hidden {
   position: relative;
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   margin-right: 0;
   margin-bottom: 90px;
@@ -1037,7 +1031,7 @@ body.overflow-hidden {
   z-index: 1;
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   margin-bottom: 30px;
   text-align: center;
@@ -1062,7 +1056,7 @@ body.overflow-hidden {
   z-index: 1;
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   margin-bottom: 30px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1075,7 +1069,7 @@ body.overflow-hidden {
   z-index: 2;
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
 }
 .hentry .row .entry-header:last-child {
@@ -1091,8 +1085,8 @@ body.overflow-hidden {
   .hentry .row .featured-image {
     float: left;
     display: block;
-    margin-right: 2.85714%;
-    width: 74.28571%;
+    margin-right: 2.8571428571%;
+    width: 74.2857142857%;
     margin: 0;
   }
   .hentry .row .featured-image:last-child {
@@ -1101,8 +1095,8 @@ body.overflow-hidden {
   .hentry .row .featured-image--empty {
     float: left;
     display: block;
-    margin-right: 2.85714%;
-    width: 74.28571%;
+    margin-right: 2.8571428571%;
+    width: 74.2857142857%;
     margin: 0;
   }
   .hentry .row .featured-image--empty:last-child {
@@ -1112,7 +1106,7 @@ body.overflow-hidden {
     position: absolute;
     float: left;
     display: block;
-    margin-right: 2.85714%;
+    margin-right: 2.8571428571%;
     width: 40%;
     margin-right: 0;
     top: 50%;
@@ -1132,8 +1126,8 @@ body.overflow-hidden {
   .hentry .row .entry-header .edit-link {
     float: left;
     display: block;
-    margin-right: 7.14286%;
-    width: 57.14286%;
+    margin-right: 7.1428571429%;
+    width: 57.1428571429%;
   }
   .hentry .row .entry-header .cat-links:last-child,
   .hentry .row .entry-header .tags-links:last-child,
@@ -1145,7 +1139,7 @@ body.overflow-hidden {
 .hentry .entry-content {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   margin-top: 60px;
 }
@@ -1156,9 +1150,9 @@ body.overflow-hidden {
   .hentry .entry-content {
     float: left;
     display: block;
-    margin-right: 2.85714%;
-    width: 65.71429%;
-    margin-left: 17.14286%;
+    margin-right: 2.8571428571%;
+    width: 65.7142857143%;
+    margin-left: 17.1428571429%;
   }
   .hentry .entry-content:last-child {
     margin-right: 0;
@@ -1186,7 +1180,7 @@ body.overflow-hidden {
   .hentry:nth-of-type(odd) .entry-header .tags-links,
   .hentry:nth-of-type(odd) .entry-header .comments-link,
   .hentry:nth-of-type(odd) .entry-header .edit-link {
-    margin-left: 42.85714%;
+    margin-left: 42.8571428571%;
     margin-right: 0;
   }
 
@@ -1196,7 +1190,7 @@ body.overflow-hidden {
   }
   .hentry:nth-of-type(even) .featured-image,
   .hentry:nth-of-type(even) .featured-image--empty {
-    margin-left: 25.71429%;
+    margin-left: 25.7142857143%;
   }
   .hentry:nth-of-type(even) .entry-header {
     left: 0;
@@ -1216,7 +1210,7 @@ body.overflow-hidden {
 .site-footer {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   margin-right: 0;
   padding: 60px 0 90px;
@@ -1228,7 +1222,7 @@ body.overflow-hidden {
 .site-footer .footer-branding {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
 }
 .site-footer .footer-branding:last-child {
@@ -1237,7 +1231,7 @@ body.overflow-hidden {
 .site-footer .footer-widgets {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   margin-right: 0;
 }
@@ -1247,7 +1241,7 @@ body.overflow-hidden {
 .site-footer .footer-widgets .widget {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -1263,8 +1257,8 @@ body.overflow-hidden {
   .site-footer .footer-branding {
     float: left;
     display: block;
-    margin-right: 2.85714%;
-    width: 31.42857%;
+    margin-right: 2.8571428571%;
+    width: 31.4285714286%;
   }
   .site-footer .footer-branding:last-child {
     margin-right: 0;
@@ -1272,8 +1266,8 @@ body.overflow-hidden {
   .site-footer .footer-widgets {
     float: left;
     display: block;
-    margin-right: 2.85714%;
-    width: 65.71429%;
+    margin-right: 2.8571428571%;
+    width: 65.7142857143%;
     margin-right: 0;
   }
   .site-footer .footer-widgets:last-child {
@@ -1282,8 +1276,8 @@ body.overflow-hidden {
   .site-footer .footer-widgets .widget {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 47.82609%;
+    margin-right: 4.347826087%;
+    width: 47.8260869565%;
   }
   .site-footer .footer-widgets .widget:last-child {
     margin-right: 0;
@@ -1299,8 +1293,8 @@ body.overflow-hidden {
   .site-footer .footer-branding {
     float: left;
     display: block;
-    margin-right: 2.85714%;
-    width: 22.85714%;
+    margin-right: 2.8571428571%;
+    width: 22.8571428571%;
   }
   .site-footer .footer-branding:last-child {
     margin-right: 0;
@@ -1308,8 +1302,8 @@ body.overflow-hidden {
   .site-footer .footer-widgets {
     float: left;
     display: block;
-    margin-right: 2.85714%;
-    width: 74.28571%;
+    margin-right: 2.8571428571%;
+    width: 74.2857142857%;
     margin-right: 0;
   }
   .site-footer .footer-widgets:last-child {
@@ -1318,14 +1312,14 @@ body.overflow-hidden {
   .site-footer .footer-widgets .widget {
     float: left;
     display: block;
-    margin-right: 3.84615%;
-    width: 30.76923%;
+    margin-right: 3.8461538462%;
+    width: 30.7692307692%;
   }
   .site-footer .footer-widgets .widget:last-child {
     margin-right: 0;
   }
   .site-footer .footer-widgets .widget:nth-child(2n) {
-    margin-right: 2.85714%;
+    margin-right: 2.8571428571%;
   }
   .site-footer .footer-widgets .widget:nth-child(2n+1) {
     clear: none;
@@ -1340,7 +1334,7 @@ body.overflow-hidden {
 .site-footer .site-info {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -1691,7 +1685,7 @@ body.overflow-hidden {
 .pagination {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
@@ -1741,7 +1735,7 @@ body.overflow-hidden {
 .post-navigation {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -1766,7 +1760,7 @@ body.overflow-hidden {
 .comment-navigation .nav-links .nav-next {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   text-align: center;
 }
@@ -1791,8 +1785,8 @@ body.overflow-hidden {
   .comment-navigation .nav-links .nav-next {
     float: left;
     display: block;
-    margin-right: 2.85714%;
-    width: 48.57143%;
+    margin-right: 2.8571428571%;
+    width: 48.5714285714%;
   }
   .post-navigation .nav-links .nav-previous:last-child,
   .post-navigation .nav-links .nav-next:last-child,
@@ -1864,7 +1858,7 @@ body.overflow-hidden {
 #comments {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   margin-bottom: 90px;
 }
@@ -1875,9 +1869,9 @@ body.overflow-hidden {
   #comments {
     float: left;
     display: block;
-    margin-right: 2.85714%;
-    width: 65.71429%;
-    margin-left: 17.14286%;
+    margin-right: 2.8571428571%;
+    width: 65.7142857143%;
+    margin-left: 17.1428571429%;
   }
   #comments:last-child {
     margin-right: 0;
@@ -1928,7 +1922,7 @@ body.overflow-hidden {
 #comments .comment-list .comment-body .comment-respond {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   margin-top: 30px;
 }
@@ -1943,7 +1937,7 @@ body.overflow-hidden {
 #comments .comment-list .comment-meta {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   margin-bottom: 15px;
 }
@@ -1954,8 +1948,8 @@ body.overflow-hidden {
   #comments .comment-list .comment-meta {
     float: left;
     display: block;
-    margin-right: 2.85714%;
-    width: 22.85714%;
+    margin-right: 2.8571428571%;
+    width: 22.8571428571%;
     margin-bottom: 0;
   }
   #comments .comment-list .comment-meta:last-child {
@@ -1982,7 +1976,7 @@ body.overflow-hidden {
 #comments .comment-list .comment-content {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
 }
 #comments .comment-list .comment-content:last-child {
@@ -1992,8 +1986,8 @@ body.overflow-hidden {
   #comments .comment-list .comment-content {
     float: left;
     display: block;
-    margin-right: 2.85714%;
-    width: 74.28571%;
+    margin-right: 2.8571428571%;
+    width: 74.2857142857%;
     margin-right: 0;
   }
   #comments .comment-list .comment-content:last-child {
@@ -2118,7 +2112,7 @@ body.overflow-hidden {
   position: relative;
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
 }
 .infinite-wrap:last-child {
@@ -2128,7 +2122,7 @@ body.overflow-hidden {
 #infinite-handle {
   float: left;
   display: block;
-  margin-right: 2.85714%;
+  margin-right: 2.8571428571%;
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
@@ -2158,7 +2152,7 @@ body.overflow-hidden {
 /* Tiled Mosaic */
 .tiled-gallery-caption {
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 0.58333em !important;
+  font-size: 0.5833333333em !important;
   text-align: center;
   background: rgba(17, 17, 17, 0.9) !important;
   color: #fff !important;
